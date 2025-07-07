@@ -1,50 +1,53 @@
-# 🚀 Power BI Sales Dashboard - Electric Vehicle Data
+# 📊 Power BI Sales Dashboard- RED ECOMMERCE SALES DASHBOARD
 
-This project is an interactive Power BI dashboard that visualizes and analyzes electric vehicle sales data across different states, categories, and payment methods.
 
----
-
-## 📊 Key Features
-
-- Created interactive dashboard to track and analyze online sales data.
-- Used filters, slicers, and drill-down features for deep analysis.
-- Built relationships between tables to enable dynamic filtering and aggregation.
-- Applied DAX calculations to compute key metrics like Profit, Quantity, and Amount.
-- Used diverse chart types: bar, pie, line, scatter, map, donut, area, etc.
+This project features an interactive Power BI dashboard built to analyze general sales data across categories, regions, and payment modes. It enables business users to gain insights into revenue, profit trends, and customer purchasing behavior through dynamic visuals and filters.
 
 ---
 
-## 📁 Dataset Overview
+## 🔍 Project Overview
 
-**1. `Details.csv`**
-- Order-level data including:
-  - Order ID, Amount, Profit, Quantity
-  - Category, Sub-Category
-  - Payment Mode
-
-**2. `Orders.csv`**
-- Metadata about the order:
-  - Order ID, Order Date
-  - Customer Name, State, City
-
-These two tables are joined using `Order ID`.
+- Built to explore overall sales performance from raw transactional and customer data.
+- Offers detailed breakdowns by category, sub-category, state, city, and payment method.
+- Allows users to interactively filter, drill down, and slice data for custom analysis.
 
 ---
 
-## 🛠 Tools & Technologies
+## 📁 Dataset Description
 
-- Power BI Desktop
-- DAX (Data Analysis Expressions)
-- Microsoft Excel (for preprocessing)
-- CSV files (as data source)
+### 1. `Details.csv`
+Contains sales transaction-level data:
+- `Order ID` – Unique ID for each order  
+- `Amount` – Total amount spent in the transaction  
+- `Profit` – Profit earned from the sale  
+- `Quantity` – Number of units purchased  
+- `Category` & `Sub-Category` – Product classification  
+- `PaymentMode` – Mode of payment (COD, EMI, Credit Card, etc.)
+
+### 2. `Orders.csv`
+Provides customer and order metadata:
+- `Order ID` – Used as a primary key to join with transaction data  
+- `Order Date` – Date the order was placed  
+- `CustomerName` – Name of the customer  
+- `State` & `City` – Geographic location of the order
 
 ---
 
-## 🖼 Dashboard Preview
+## 🧠 Key Features
 
-![Dashboard Screenshot](screenshot.png)
+- 🔗 **Data Modeling**: Joined `Orders.csv` and `Details.csv` using `Order ID` to build a relational data model.
+- 📊 **Visualizations**: Includes bar charts, pie charts, donut charts, line and area graphs, maps, and scatter plots.
+- 📌 **DAX Measures**: Created calculated metrics like Total Sales, Total Profit, Quantity Sold, and Average Order Value (AOV).
+- 🧹 **Power Query**: Cleaned and transformed data (e.g., type conversion, null handling, formatting).
+- 🗂 **Dynamic Filtering**: Users can filter by category, sub-category, state, city, date, and payment method.
 
 ---
 
-## 📂 Folder Structure
+## 💻 Tools & Technologies
 
+- Power BI Desktop  
+- DAX (Data Analysis Expressions)  
+- Power Query  
+- CSV files
+
+---
